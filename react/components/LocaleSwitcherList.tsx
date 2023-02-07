@@ -85,7 +85,7 @@ export default function LocaleSwitcherList(props: Props) {
             onKeyDown={() => handleItemClick(localeId)}
             onMouseDown={e => e.preventDefault()}
           >
-            <span className={`${handles.localeIdText} w-100`}>{text}</span>
+            <span className={`${handles.localeIdText} w-100`}>{text === "es" ? "español" : "english"}</span>
           </li>
         ))}
     </ul>
